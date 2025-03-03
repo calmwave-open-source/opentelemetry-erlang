@@ -1,4 +1,4 @@
-defmodule OpenTelemetryExperimental.MixProject do
+defmodule OpenTelemetryApiExperimental.MixProject do
   use Mix.Project
 
   def project do
