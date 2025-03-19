@@ -7,6 +7,62 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Experimental API 0.5.2 - 2024-11-22
+
+### Added
+
+- [Hard code semconv values](https://github.com/open-telemetry/opentelemetry-erlang/pull/780)
+
+## Experimental SDK 0.6.0 - 2024-11-22
+
+### Added
+
+- [move metrics and logs to separate exporter modules from
+  traces](https://github.com/open-telemetry/opentelemetry-erlang/pull/720)
+- [make the console metric exporter handle all
+  values](https://github.com/open-telemetry/opentelemetry-erlang/pull/709)
+
+### Fixes
+
+- [metric exporter: nothing to do for an empty list of
+  metrics](https://github.com/open-telemetry/opentelemetry-erlang/pull/782)
+- [Hard code semconv
+  values](https://github.com/open-telemetry/opentelemetry-erlang/pull/780)
+- [removed old unused otel_metric_exporter
+  module](https://github.com/open-telemetry/opentelemetry-erlang/pull/715)
+  
+## Exporter 1.8.0 - 2024-10-05
+
+### Fixes
+
+- [BREAKING: Fixes support for attribute values that are lists when the elements
+  are strings. Lists of strings in attribute values are no longer flattened but
+  remain lists. Meaning to use an Erlang charlist string or iolist as a value in
+  an attribute you must convert with `unicode:characters_to_binary` before
+  adding to the
+  attributes](https://github.com/open-telemetry/opentelemetry-erlang/pull/737)
+
+## API 1.4.0 - 2024-10-05
+
+### Changes
+
+- [Hard code semconv 0.2 values](https://github.com/open-telemetry/opentelemetry-erlang/pull/780)
+
+## SDK 1.5.0 - 2024-10-05
+
+### Changes
+
+- [Fix invalid warning log causing FORMATTER
+  CRASH](https://github.com/open-telemetry/opentelemetry-erlang/pull/774)
+- [Hard code semconv 0.2 values](https://github.com/open-telemetry/opentelemetry-erlang/pull/780)
+
+## API 1.3.1 - 2024-09-03
+
+### Fixes
+
+- [Fix dialyzer warning when starting a span by adding
+  `otel_span:start_config`](https://github.com/open-telemetry/opentelemetry-erlang/pull/717)
+
 ## Experimental API 0.5.1 - 2024-03-18
 
 ### Added
